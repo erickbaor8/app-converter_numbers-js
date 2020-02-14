@@ -11,3 +11,5 @@ Number Converter is a simple program that converts numbers in format decimal, he
 + [x] Convert binary to octal. The input value must have the format (2)######, where ##### represents the binary number.
 
 ## **Screenshots**
+
+![Screenshot](static/0.png)
