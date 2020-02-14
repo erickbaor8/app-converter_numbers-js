@@ -32,6 +32,6 @@ function binToDec(value) {
 function print(value) { 
     let elem = document.createElement('div');
     elem.className = 'result';
-    elem.innerHTML = `<p>${value}</p>`;
+    elem.innerHTML = `<h2>Decimal</h2><p class="value">${value}</p>`;
     outputNumber.append(elem);
 }
