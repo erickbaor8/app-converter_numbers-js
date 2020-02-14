@@ -13,7 +13,12 @@ inputNumber.addEventListener('keyup', event => {
 
 function convertNumber(value) {
     if (value.includes('(2)')) 
-        return print([binToBin(value), binToDec(value.slice(3)), binToHex(value.slice(3))]);
+        return print([
+            binToBin(value), 
+            binToDec(value.slice(3)), 
+            binToHex(value.slice(3)), 
+            binToOct(value.slice(3))
+        ]);
 }
 
 function binToBin(value) {
@@ -50,8 +55,24 @@ function binToHex(value) {
     return hex.split('').reverse().join('');
 }
 
+function binToOct(value) {
+    let start = value.length;
+    let end = start - 3;
+    let hex = '';
+
+    while (start >= 0) {
+        let str = value.substring(end, start);
+        hex += binToDec(str);
+
+        start = end;
+        end = start - 3;
+    }
+
+    return hex.split('').reverse().join('');
+}
+
 function print(values) { 
-    let formats = ['Binary', 'Decimal', 'Hexadecimal']
+    let formats = ['Binary', 'Decimal', 'Hexadecimal', 'Octal']
     
     for (let i=0; i < formats.length; i++) {
         let elem = document.createElement('div');
