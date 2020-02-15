@@ -2,7 +2,7 @@
 
 ## **Description**
 
-Number Converter is a simple program that converts numbers in format decimal, hexadecimal, octal and binary to others formats, i.e. to binary, octal, hexadecimal and decimal.
+Number Converter is a simple program that converts numbers in format binary to binary, octal, hexadecimal and decimal.
 
 ## **Features**
 
