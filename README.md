@@ -1,8 +1,8 @@
-# **Number Converter**
+# **Bin2DecHexOct Converter**
 
 ## **Description**
 
-Number Converter is a simple program that converts numbers in format binary to binary, octal, hexadecimal and decimal.
+Bin2DecHexOct Converter is a simple program that converts numbers in format binary to binary, octal, hexadecimal and decimal.
 
 ## **Features**
 
